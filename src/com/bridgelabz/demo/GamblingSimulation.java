@@ -3,11 +3,14 @@ package com.bridgelabz.demo;
 import java.util.Random;
 
 public class GamblingSimulation {
-	static final int STAKE_PER_DAY = 100;
-	static final int BET_PER_GAME = 1;
-	static final int WIN = 1;
-	static int stake = 1;/// intial gambler bets with 1
+	public static final int STAKE_PER_DAY = 100;
+	public static final int BET_PER_GAME = 1;
+	public static final int WIN = 1;
+	public static int stake = 0;/// intial gambler bets with 1
 
+	/*
+	 * wincheck function will check if gambler wins or loss
+	 */
 	public static void winCheck() {
 		Random random = new Random();
 		int betReturns = random.nextInt(2);
